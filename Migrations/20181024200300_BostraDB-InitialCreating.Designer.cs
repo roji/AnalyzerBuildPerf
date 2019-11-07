@@ -6,7 +6,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace Bolstra.Migrations
 {
@@ -16,6 +17,7 @@ namespace Bolstra.Migrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
+            var x = typeof(object).GetMethod(nameof(object.ToString), Type.EmptyTypes).DisplayName();
         }
     }
 }

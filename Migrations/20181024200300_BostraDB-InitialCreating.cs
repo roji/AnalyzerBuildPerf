@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
+using Microsoft.EntityFrameworkCore.Metadata;
 using System;
 
 namespace Bolstra.Migrations
@@ -8,6 +8,7 @@ namespace Bolstra.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
